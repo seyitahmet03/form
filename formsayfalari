@@ -1,0 +1,89 @@
+<h4>###sayfa1</h4>
+
+<form action="" method="post">
+<p>
+Adı Soyadı:<input type="text" name="adisoyadi" /></br>
+
+Doğum Tarihi:</br>GÜN:<input type="number" name="gün" min="01" max="31" />AY:<input type="number" name="ay" min="01" max="12" />YIL:<input type="number" name="yıl" min="1900" max="2100" /></br>
+
+E-posta:<input type="email" name="email" /></br>
+ 
+Lakabı/Unvanı/Hitap edilen başka türde kelime(varsa)(Örn:prof, yarbay, memo):</br><input type="text" name="lakabi" /></br>
+
+Mesleği:<input type="text" name="meslek" /></br>
+
+Cinsiyeti:</br>
+
+		<input type="radio" name="cinsiyet" value="erkek" checked="on"> Erkek
+		<input type="radio" name="cinsiyet" value="disi"> Kadın</br>
+<input type="submit" value="ileri" /></br>
+
+</p>
+
+<h4>/*sayfa2*/</h4>
+
+<form action="" method="post">
+<p>
+Medeni Durum:</br>
+		<input type="radio" name="mdurum" value="evli" checked="on"> evli
+		<input type="radio" name="mdurum" value="bekar"> bekar
+		<input type="radio" name="mdurum" value="dul"> dul</br>
+<input type="submit" value="ileri" /></br>
+
+</p>
+
+
+<h4>###sayfa3(Bu sayfa sadece hem Kadın hem de evli seçeneğini işaretleyenlere açılacak.)</h4>
+
+
+<form action="" method="post">
+<p>
+Evlilik Tarihi:
+<input type="number" name="egün" min="01" max="31" />AY:<input type="number" name="eay" min="01" max="12" />YIL:<input type="number" name="eyıl" min="1900" max="2100" /></br>
+Kızlık Soyadı:
+<input type="text" name="ksoyad"/></br>
+<input type="submit" value="ileri" /></br>
+</p>
+
+<h4>###sayfa4(Bu sayfa sadece hem Kadın hem de dul seçeneğini işaretleyenlere açılacak.)</h4>
+
+<form action="" method="post">
+<p>
+Evlilik Tarihi:</br>
+GÜN:<input type="number" name="egün" min="01" max="31" />AY:<input type="number" name="eay" min="01" max="12" />YIL:<input type="number" name="eyıl" min="1900" max="2100" /></br>
+
+Boşanma Tarihi:</br>
+GÜN:<input type="number" name="bgün" min="01" max="31" />AY:<input type="number" name="bay" min="01" max="12" />YIL:<input type="number" name="byıl" min="1900" max="2100" /></br>
+Şu An Hangi Soyadı Kullanıyorsunuz?:</br>
+<input type="radio" name="soyadbilgisi" value="evlilikle gelen soyad"/>evlilikle gelen soyad
+<input type="radio" name="soyadbilgisi" value="kızlık soyadı"/>kızlık soyadı</br>
+</p>
+	
+	//eğer evlilikle gelen soyadı soyadını seçerse aşağıdaki kızlık soyadı seçeneği açılsın.</br>
+Kızlık Soyadı:</td></br>
+<input type="text" name="ksoyad"/></br>
+<input type="submit" value="ileri" /></br></br>	
+
+
+<h4>###sayfa5</h4>
+<p>
+buraya ben hatırlatmalar başlığıyla notlar gireceğim ve altta da gönder butonu olacak. aynı zamanda buraya link de koyabilirm.</br>
+<input type="submit" value="Gönder" /></br>
+</p>
+
+#########################################################
+
+
+Yani erkek seçilirse ilk sayfada, hiçbir şekilde evlilik ya da boşanma bilgisi sormasın çünkü
+zaten soyad değişikliği hiçbir zaman olmuyor.
+ama kadın seçilirse soyad değişikliği olmuş olabileceği için evliyse evli sayfasına  boşanmışsa boşanma
+sayfasına yönlendirmeli ve ondan sonra da son hatırltamalar ve gönder sayfasına.
+
+Form için css tavsiyesine açığım...
+
+Bunların hepsini post metoduyla almam gerekiyor...
+
+Formda bir hata var mı bilmiyorum tavsiyelere açığım şimdiden teşekkürler elinize sağlık...
+
+
+#########################################################
